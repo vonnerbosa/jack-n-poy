@@ -1,6 +1,11 @@
-const playerSelection = "rock";
+function game() {
+}
+
+/*
+let playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
+*/
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
@@ -32,8 +37,9 @@ function playRound(playerSelection, computerSelection) {
     }
 
     else {
-        return "I don't know LOL!"
+        return "I don't know LOL!";
     }
+
 
   }
 
