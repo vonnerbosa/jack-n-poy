@@ -1,11 +1,60 @@
+
+
 function game() {
+    let score = 0;
+    let playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
+    let computerSelection = getComputerChoice();
+    let result = playRound(playerSelection, computerSelection);
+
+    if (result.includes("Win")){
+        ++score
+    }
+
+    console.log(result+" "+"player score is "+score)
+////////////////////////////////////////////////////////////////////////
+    playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+
+    if (result.includes("Win")){
+        ++score
+    }
+
+    console.log(result+" "+"player score is "+score)
+////////////////////////////////////////////////////////////////////////
+    playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+
+    if (result.includes("Win")){
+        ++score
+    }
+
+    console.log(result+" "+"player score is "+score)
+////////////////////////////////////////////////////////////////////////
+    playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+
+    if (result.includes("Win")){
+        ++score
+    }
+
+    console.log(result+" "+"player score is "+score)
+////////////////////////////////////////////////////////////////////////
+    playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+
+    if (result.includes("Win")){
+        ++score
+    }
+
+    console.log(result+" "+"player score is "+score)
+////////////////////////////////////////////////////////////////////////
+    console.log("\nAfter five rounds, the player scored a total of "+score+" points!"+"\n\nThank you for playing!")
 }
 
-/*
-let playerSelection = prompt("Rock? Paper? or Scissors?").toLowerCase();
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-*/
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
@@ -37,12 +86,11 @@ function playRound(playerSelection, computerSelection) {
     }
 
     else {
-        return "I don't know LOL!";
+        return "I think you mistyped LoL!";
     }
-
-
   }
 
+  game()
 
 function getComputerChoice() {
     ranNum = Math.floor(Math.random() * 3);
