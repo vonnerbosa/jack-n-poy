@@ -4,7 +4,7 @@ playerSelection = button.value;
 computerSelection = getComputerChoice();
 
 button.addEventListener('click', () => {
-    game();
+    console.log(playerSelection);
 })
 
 function game() {
